@@ -1,0 +1,16 @@
+<h2 style="text-align: center">Welcome to the Hypercar Service!</h2>
+<br>
+<div style="text-align: center">
+    {% if number %}
+        Next ticket #{{ number }}
+    {% else %}
+        Waiting for the next client
+    {% endif %}
+</div>
+
+
+<h4>Menu:</h4>
+<a href="/get_ticket/change_oil">Change oil</a><br>
+<a href="/get_ticket/inflate_tires">Inflate tires</a><br>
+<a href="/get_ticket/diagnostic">Get diagnostic test</a><br>
+<a href="/processing">Electronic queue</a><br>
